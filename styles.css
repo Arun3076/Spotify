@@ -1,0 +1,310 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    margin: 0.25rem;
+}
+.sidebar{
+    background-color:  black;
+    width: 400px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main-content{
+    background-color: #272626;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+}
+.musicplayer{
+    background-color: rgb(2, 2, 2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    justify-content: center;
+    background-color: #272626;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav i{
+    font-size: 1.5rem;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.nav-option{
+    opacity: 0.7;
+    height: 40px;
+    padding: 0.25rem 0.75rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.library{
+    height: 100%;
+    margin-top: 0.5rem;
+    background-color: #272626;
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+.lib-options {
+    padding: 0.25rem 0.75rem;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.lib-options a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.icons i{
+    padding-right: 15px;
+}
+.icons{
+    font-size: 1.3rem;
+    display: flex;
+    padding: 0.25rem 0.75rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.box{
+
+    background-color: #303030;
+    border-radius: 0.75rem;
+    height: 7rem;
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0.5rem 1.3rem;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    height: 1.6rem;
+    padding: 0.25rem 1rem;
+    font-weight: 500;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    /* opacity: 0.7; */
+    padding: 0.5rem 0.75rem;
+    height: 2.5rem;
+    z-index: 7;
+    
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.sticky-options button{
+    margin-right: 0.5rem;
+}
+.sticky-icons img{
+    margin-left: 1rem;
+}
+.sticky-options{
+    margin-right: 0.5rem;
+    display: flex;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.cards h2{
+
+    margin-left: 1rem;
+}
+.cards{
+    margin-left: 1rem;
+}
+.cards-container{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #303030  ;
+    width: 180px;
+    padding: 0.7rem;
+    margin-left: 1rem;margin-top: 0.5rem;
+    border-radius: 10px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card-title{
+    font-weight: 500;
+}
+.card-info{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 80%;
+    height: 30%;
+  border-top: 1px solid white;
+  opacity: 0.5;
+}
+.musicplayer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.control{
+    width: 25%;
+}
+.top{
+    display: flex;
+    justify-content:center; /* space-evenly; */
+    align-items: center;
+    /* height: 50%; */
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50%; */
+    width: 90%;
+}
+.player-icon:hover{
+    opacity: 1;
+}
+.player-icon{
+    margin-right: 1.2rem;/* padding: 0 1rem;  */
+    height: 1rem;
+    width: 1 rem;
+    opacity: 0.7;
+}
+input{
+    width: 50%;
+    margin-left: 1rem;
+}
+.pro-bar{
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.pro-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+.pro-bar::-webkit-slider-runnable-track{
+    background-color: aliceblue;
+    border-radius: 100px;
+    height: 0.3rem;
+}
+.tot-time{
+    margin-left: 1rem;
+
+}
+@media(max-width:1000px){
+    .album{
+        display: none;
+        visibility: hidden;
+    }
+}
+.album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.al1 img{
+    height: 3rem;
+    width: 3rem;
+}
+.al2{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.al3{
+    display: flex;
+    margin-left: 5rem;
+}
+.al3 img{
+    padding-left: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+#para2{
+    margin: 0;
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+#para1{
+    margin: 0;
+    font-size: 1rem;
+}
+.con-icons img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+.con-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.new{
+    height: 0.11rem;
+    width: 0.11rem;
+}
